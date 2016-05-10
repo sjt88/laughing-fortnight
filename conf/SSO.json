@@ -1,0 +1,24 @@
+{
+  "eveSSO": {
+    "clientID": "xaxaxa",
+    "clientSecret": "xaxaxa",
+    "callbackURL": "http://localhost:3000/api/sso/cb",
+    "authorizationURL": "https://login.eveonline.com/oauth/authorize",
+    "verifyURL": "https://login.eveonline.com/oauth/verify",
+    "tokenURL": "https://login.eveonline.com/oauth/token",
+    "scopes": [
+    	"characterAccountRead",
+    	"characterAssetsRead",
+    	"characterBookmarksRead",
+      "publicData",
+      "characterKillsRead",
+      "characterLocationRead",
+      "characterMarketOrdersRead",
+      "characterContactsRead",
+      "characterMailRead",
+      "characterIndustryJobsRead",
+      "characterFittingsRead",
+      "characterLoyaltyPointsRead"
+    ]
+  }
+}

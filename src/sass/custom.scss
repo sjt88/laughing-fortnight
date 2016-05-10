@@ -1,0 +1,25 @@
+$background_color: #2b3e50;
+
+body {
+  font: 100% Helvetica, sans-serif;
+  background: none;
+}
+
+.fullpagebg {
+  background-image: url(/static/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+table.table-dark {
+  background-color: $background_color;
+}
+
+.panel {
+
+}

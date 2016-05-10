@@ -1,0 +1,47 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Eve Character App</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-left">
+      {{#if loggedIn}}
+        {{> navbar_item url="/profile" text="Profile" isActive=active.profile }}
+        {{> navbar_item url="/skills" text="Skills" isActive=active.skills }}
+      {{/if}}
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+          {{#if loggedIn}}
+            {{ username }}
+            <span class="caret"></span>
+            {{else}}
+            <li><a href="/login">Log In</a></li>
+          {{/if}}
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            {{#if loggedIn }}
+            <li><a href="/account">Account</a></li>
+            <li><a href="/session">Session</a></li>
+            <li class="divider"></li>
+            <li><a href="/logout">Logout</a></li>
+            {{else}}
+            <li><a href="/login">Login</a></li>
+            {{/if}}
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>

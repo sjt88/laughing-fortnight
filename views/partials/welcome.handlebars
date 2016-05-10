@@ -1,0 +1,11 @@
+{{#if loggedIn}}
+	<h1>Welcome! {{ username }}</h1>
+{{else}}
+	<div class="jumbotron">
+	  <h1>Welcome</h1>
+	  <p>You're not logged in, do so by clicking the Login button m8.</p>
+		<a class="btn btn-primary" href="/login">Login</a>
+	</div>
+{{/if}}
+
+
